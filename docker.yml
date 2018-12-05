@@ -1,0 +1,14 @@
+---
+- hosts: test
+  remote_user: root
+  vars:
+   user: qeyss
+   domain: local.qeyss
+  tasks:
+  roles:
+   - user
+   - nginx
+   - tools
+   - docker
+   - gitlab
+   - rancher
